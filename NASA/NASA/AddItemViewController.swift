@@ -53,7 +53,15 @@ class AddItemViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if infofromview4 != nil{
+            if let page4Controller = tabBarController?.viewControllers?[0] as? Page4ViewController{
+                itemInputTextField.text = page4Controller.itemList[infofromview4!]
+                okButton.setTitle("OK", for: .normal)
+            }
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
