@@ -25,6 +25,29 @@ class AddItemViewController: UIViewController {
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
+        if let text = itemInputTextField.text{
+            guard let page4Controller = tabBarController?.viewControllers?[0] as? Page4ViewController else {return}
+            if text != ""{
+                if infofromview4 != nil{
+                    page4Controller.itemList[infofromview4!] = text
+                    infofromview4 = nil
+                }else{
+                    page4Controller.itemList.append(text)
+                }
+                page4Controller.itemTableView.reloadData()
+                UserDefaults.standard.set(page4Controller.itemList, forKey: "package")
+            }else{
+                if infofromview4 != nil{
+                    page4Controller.itemList.remove(at: infofromview4!)
+                    page4Controller.itemTableView.reloadData()
+                    UserDefaults.standard.set(page4Controller.itemList, forKey: "package")
+                    infofromview4 = nil
+                }
+            }
+        }
+        itemInputTextField.text = ""
+        okButton.setTitle("Back", for: .normal)
+        tabBarController?.selectedIndex = 0
     }
     override func viewDidLoad() {
         super.viewDidLoad()

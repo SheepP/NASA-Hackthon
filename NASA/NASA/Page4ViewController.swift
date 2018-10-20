@@ -10,6 +10,7 @@ import UIKit
 
 class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
+    @IBOutlet weak var itemTableView: UITableView!
     @IBOutlet weak var userImage1: UIImageView!
     @IBOutlet weak var userImage2: UIImageView!
     @IBOutlet weak var userImage3: UIImageView!

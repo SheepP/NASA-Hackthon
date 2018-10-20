@@ -193,6 +193,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="GEM-Wl-XfD"/>
                     <connections>
+                        <outlet property="itemTableView" destination="Kpm-sr-m6A" id="09C-vt-POw"/>
                         <outlet property="userImage1" destination="7Eb-IC-RT7" id="no9-lX-7Ur"/>
                         <outlet property="userImage2" destination="Gic-u8-ZSQ" id="sFn-6n-NoN"/>
                         <outlet property="userImage3" destination="2pn-xd-FqH" id="k4h-gz-h6E"/>
