@@ -63,7 +63,11 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
      */
 
     @IBAction func cellSwitch(_ sender: UISwitch) {
-        print("ononon")
+        if sender.isOn{
+          print("ononon")   }
+        else{
+            print("Offoffoff")
+        }
     }
     
     override func viewDidLoad() {
