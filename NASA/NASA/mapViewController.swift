@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class mapViewController: UIViewController {
+class mapViewController: UIViewController,CLLocationManagerDelegate {
 
+    @IBOutlet weak var map: MKMapView!
+    var locationManager: CLLocationManager?
+    
+    //back
     @IBAction func backMainButtom(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
     @IBOutlet weak var userImageA: UIImageView!
     @IBOutlet weak var userImageB: UIImageView!
     @IBOutlet weak var userImageC: UIImageView!
@@ -21,6 +28,7 @@ class mapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //image
         userImageA.layer.cornerRadius = userImageA.frame.size.width / 2
         userImageA.clipsToBounds = true
         userImageB.layer.cornerRadius = userImageB.frame.size.width / 2
@@ -29,8 +37,31 @@ class mapViewController: UIViewController {
         userImageC.clipsToBounds = true
         userImageD.layer.cornerRadius = userImageD.frame.size.width / 2
         userImageD.clipsToBounds = true
+        
+        //map
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager?.activityType = .automotiveNavigation
+        locationManager?.startUpdatingLocation()
+        
+        if let coordinate = locationManager?.location?.coordinate{
+            let xScale:CLLocationDegrees = 0.01
+            let yScale:CLLocationDegrees = 0.01
+            let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: yScale, longitudeDelta: xScale)
+            let region = MKCoordinateRegion(center: coordinate, span: span)
+            map.setRegion(region, animated: true)
+        }
+       
+        map.userTrackingMode = .followWithHeading
     }
-
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("---------------------------------------")
+        print(locations[0].coordinate.latitude)
+        print(locations[0].coordinate.longitude)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
