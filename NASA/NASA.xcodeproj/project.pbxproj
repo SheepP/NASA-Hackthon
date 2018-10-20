@@ -145,6 +145,7 @@
 				1038034A217AF6C80080D249 /* Page4ViewController.swift in Sources */,
 				04467E89217AEA50003DC80C /* questionViewController.swift in Sources */,
 				04467E87217AEA26003DC80C /* earthquakeViewController.swift in Sources */,
+				04467E8B217AF436003DC80C /* userViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
