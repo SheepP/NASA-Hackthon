@@ -41,6 +41,13 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
             itemTableView.reloadData()
         }
     }
+    
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        if let AddItemViewController = tabBarController?.viewControllers?[3] as? AddItemViewController{
+            AddItemViewController.infofromview4 = indexPath.row
+        }
+        tabBarController?.selectedIndex = 4
+    }
         
         
     override func viewDidLoad() {
