@@ -33,6 +33,14 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
         return cell
         
     }
+    
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            itemList.remove(at: indexPath.row)
+            UserDefaults.standard.set(itemList, forKey: "package")
+            itemTableView.reloadData()
+        }
+    }
         
         
     override func viewDidLoad() {

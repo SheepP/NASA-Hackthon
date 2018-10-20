@@ -13,7 +13,6 @@ class AddItemViewController: UIViewController {
     
 
     @IBOutlet weak var itemInputTextField: UITextField!
-    
     @IBOutlet weak var okButton: UIButton!
     
     @IBAction func textFieldDidChanged(_ sender: UITextField) {

@@ -217,6 +217,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDidChanged:" destination="G2y-DZ-ji1" eventType="editingChanged" id="veV-Id-VPV"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cp-Ji-LgG">
                                 <rect key="frame" x="170" y="203" width="34" height="30"/>
@@ -224,7 +227,6 @@
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="G2y-DZ-ji1" eventType="touchDown" id="h1U-Y5-8MX"/>
-                                    <action selector="textFieldDidChanged:" destination="G2y-DZ-ji1" eventType="editingChanged" id="Td7-oB-IwO"/>
                                 </connections>
                             </button>
                         </subviews>
