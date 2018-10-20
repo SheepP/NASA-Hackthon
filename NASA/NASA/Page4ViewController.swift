@@ -10,6 +10,7 @@ import UIKit
 
 class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
+    @IBOutlet weak var itemTableView: UITableView!
     @IBOutlet weak var userImage1: UIImageView!
     @IBOutlet weak var userImage2: UIImageView!
     @IBOutlet weak var userImage3: UIImageView!
@@ -17,7 +18,7 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
     @IBAction func backToPage3(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    var itemList = ["Apple","Banana","Orange"]
+    var itemList = UserDefaults.standard.stringArray(forKey: "package") ?? [String]()
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -29,11 +30,42 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = itemList[indexPath.row]
+        let switches = cell.viewWithTag(200) as? UISwitch
+        switches?.isOn = false
+        cell.backgroundColor = .gray
         return cell
         
     }
-        
-        
+    
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            itemList.remove(at: indexPath.row)
+            UserDefaults.standard.set(itemList, forKey: "package")
+            itemTableView.reloadData()
+        }
+    }
+    //讓使用者點選cell的時候不要反白
+    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+    
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        if let AddItemViewController = tabBarController?.viewControllers?[3] as? AddItemViewController{
+            AddItemViewController.infofromview4 = indexPath.row
+        }
+        tabBarController?.selectedIndex = 3
+    }
+   
+    /*
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)")
+    }
+     */
+
+    @IBAction func cellSwitch(_ sender: UISwitch) {
+        print("ononon")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         userImage1.layer.cornerRadius = userImage1.frame.size.width / 2
