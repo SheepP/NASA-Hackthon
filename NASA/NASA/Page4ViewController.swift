@@ -32,6 +32,7 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
         cell.textLabel?.text = itemList[indexPath.row]
         let switches = cell.viewWithTag(200) as? UISwitch
         switches?.isOn = false
+        cell.backgroundColor = .gray
         return cell
         
     }
@@ -54,8 +55,17 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
         }
         tabBarController?.selectedIndex = 3
     }
-        
-        
+   
+    /*
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)")
+    }
+     */
+
+    @IBAction func cellSwitch(_ sender: UISwitch) {
+        print("ononon")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         userImage1.layer.cornerRadius = userImage1.frame.size.width / 2
