@@ -67,6 +67,11 @@ class AddItemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        buttonPressed(UIButton())
+        return true
+    }
+    
 
     /*
     // MARK: - Navigation
