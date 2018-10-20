@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func startSelect(_ sender: Any) {
+        for option in options{
+            option.isHidden = !option.isHidden
+        }
+    }
+    
+    @IBOutlet var options: [UIButton]!
+    
+    @IBAction func optionsPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "questionView", sender: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
