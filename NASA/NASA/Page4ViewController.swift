@@ -30,6 +30,8 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = itemList[indexPath.row]
+        let switches = cell.viewWithTag(200) as? UISwitch
+        switches?.isOn = false
         return cell
         
     }
@@ -40,6 +42,10 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
             UserDefaults.standard.set(itemList, forKey: "package")
             itemTableView.reloadData()
         }
+    }
+    //讓使用者點選cell的時候不要反白
+    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        return false
     }
     
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
