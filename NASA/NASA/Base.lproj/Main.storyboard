@@ -13,13 +13,13 @@
         <!--View Controller-->
         <scene sceneID="sEc-90-c56">
             <objects>
-                <viewController id="z1G-ql-q4A" sceneMemberID="viewController">
+                <viewController id="z1G-ql-q4A" customClass="ViewController" customModule="NASA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k8V-Mj-fCt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGo-sb-gSi">
-                                <rect key="frame" x="62" y="87" width="108" height="97"/>
+                                <rect key="frame" x="177" y="118" width="97" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
@@ -28,14 +28,116 @@
                                     <segue destination="JEP-WJ-Ka4" kind="show" id="Qi1-yU-ouT"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oL-FI-nog">
+                                <rect key="frame" x="33" y="302" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Earthquake"/>
+                                <connections>
+                                    <action selector="optionsPressed:" destination="z1G-ql-q4A" eventType="touchUpInside" id="UiQ-nd-rR3"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P0-jc-XuS">
+                                <rect key="frame" x="51" y="332" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghV-DT-EjM">
+                                <rect key="frame" x="51" y="362" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRm-Av-xrm">
+                                <rect key="frame" x="51" y="392" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rn-tT-5Ar">
+                                <rect key="frame" x="51" y="422" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7a-Af-EKn">
+                                <rect key="frame" x="51" y="452" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHV-u9-zod">
+                                <rect key="frame" x="42" y="268" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Typhoon"/>
+                                <connections>
+                                    <action selector="optionsPressed:" destination="z1G-ql-q4A" eventType="touchUpInside" id="fq5-bc-bKN"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIm-jC-O63">
+                                <rect key="frame" x="37" y="73" width="75" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="UserImageSample"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inh-J6-pne">
+                                <rect key="frame" x="54" y="164" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="David"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpA-84-3Ly">
+                                <rect key="frame" x="19" y="190" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Edit Infomation"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nB-xr-8oZ">
+                                <rect key="frame" x="25" y="227" width="116" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="All Disasters">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e08-0A-z8r">
+                                <rect key="frame" x="16" y="38" width="96" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="0.0" height="-4"/>
+                                <state key="normal" title="Button" image="File"/>
+                                <connections>
+                                    <action selector="startSelect:" destination="z1G-ql-q4A" eventType="touchUpInside" id="NFO-ao-F1y"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfO-Sl-u7q">
+                                <rect key="frame" x="49" y="476" width="57" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="qPa-3x-m5E"/>
                     </view>
+                    <connections>
+                        <outletCollection property="options" destination="hHV-u9-zod" collectionClass="NSMutableArray" id="nJz-2O-Fuv"/>
+                        <outletCollection property="options" destination="7oL-FI-nog" collectionClass="NSMutableArray" id="NhD-Fq-sux"/>
+                        <outletCollection property="options" destination="B7a-Af-EKn" collectionClass="NSMutableArray" id="5G6-AO-che"/>
+                        <outletCollection property="options" destination="0rn-tT-5Ar" collectionClass="NSMutableArray" id="LFD-Ze-bRr"/>
+                        <outletCollection property="options" destination="KfO-Sl-u7q" collectionClass="NSMutableArray" id="4aH-53-V2R"/>
+                        <outletCollection property="options" destination="JRm-Av-xrm" collectionClass="NSMutableArray" id="r7K-HQ-Mv6"/>
+                        <outletCollection property="options" destination="ghV-DT-EjM" collectionClass="NSMutableArray" id="3wN-uN-qme"/>
+                        <outletCollection property="options" destination="8P0-jc-XuS" collectionClass="NSMutableArray" id="fNq-9e-DjF"/>
+                        <outletCollection property="options" destination="gpA-84-3Ly" collectionClass="NSMutableArray" id="bht-F4-frw"/>
+                        <outletCollection property="options" destination="IIm-jC-O63" collectionClass="NSMutableArray" id="zbg-Fb-587"/>
+                        <outletCollection property="options" destination="inh-J6-pne" collectionClass="NSMutableArray" id="LAW-RW-bOf"/>
+                        <outletCollection property="options" destination="7nB-xr-8oZ" collectionClass="NSMutableArray" id="cjJ-hY-wqv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kXm-xq-RTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204" y="375"/>
+            <point key="canvasLocation" x="204" y="374.66266866566718"/>
         </scene>
         <!--Earthquake-->
         <scene sceneID="IpG-mq-JSv">
@@ -261,6 +363,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Q4X-46-OSi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KHt-kP-PMH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -308,6 +411,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="File" width="21" height="20"/>
         <image name="UserImageSample" width="100" height="100"/>
     </resources>
 </document>
