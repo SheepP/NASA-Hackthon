@@ -143,9 +143,6 @@
                                     <rect key="frame" x="0.0" y="72" width="375" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="add item"/>
-                                    <connections>
-                                        <segue destination="G2y-DZ-ji1" kind="show" id="sRG-gm-j7d"/>
-                                    </connections>
                                 </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="pkv-nb-mnV">
@@ -261,6 +258,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Q4X-46-OSi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KHt-kP-PMH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
