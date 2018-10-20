@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04467E87217AEA26003DC80C /* earthquakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04467E86217AEA26003DC80C /* earthquakeViewController.swift */; };
 		04467E89217AEA50003DC80C /* questionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04467E88217AEA50003DC80C /* questionViewController.swift */; };
+		04B7C38D217BBA810013DF25 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C38C217BBA810013DF25 /* mapViewController.swift */; };
 		1038034A217AF6C80080D249 /* Page4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10380349217AF6C80080D249 /* Page4ViewController.swift */; };
 		1038034C217B08740080D249 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1038034B217B08740080D249 /* AddItemViewController.swift */; };
 		10A1855C217A31AB000C94C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1855B217A31AB000C94C0 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		04467E86217AEA26003DC80C /* earthquakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = earthquakeViewController.swift; sourceTree = "<group>"; };
 		04467E88217AEA50003DC80C /* questionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionViewController.swift; sourceTree = "<group>"; };
+		04B7C38C217BBA810013DF25 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		10380349217AF6C80080D249 /* Page4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4ViewController.swift; sourceTree = "<group>"; };
 		1038034B217B08740080D249 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		10A18558217A31AB000C94C0 /* NASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,7 @@
 				10A1855B217A31AB000C94C0 /* AppDelegate.swift */,
 				10A1855D217A31AB000C94C0 /* ViewController.swift */,
 				10A1855F217A31AB000C94C0 /* Main.storyboard */,
+				04B7C38C217BBA810013DF25 /* mapViewController.swift */,
 				1038034B217B08740080D249 /* AddItemViewController.swift */,
 				10380349217AF6C80080D249 /* Page4ViewController.swift */,
 				04467E88217AEA50003DC80C /* questionViewController.swift */,
@@ -147,6 +150,7 @@
 				10A1855C217A31AB000C94C0 /* AppDelegate.swift in Sources */,
 				1038034A217AF6C80080D249 /* Page4ViewController.swift in Sources */,
 				04467E89217AEA50003DC80C /* questionViewController.swift in Sources */,
+				04B7C38D217BBA810013DF25 /* mapViewController.swift in Sources */,
 				04467E87217AEA26003DC80C /* earthquakeViewController.swift in Sources */,
 				1038034C217B08740080D249 /* AddItemViewController.swift in Sources */,
 			);
