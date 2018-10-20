@@ -18,7 +18,7 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
     @IBAction func backToPage3(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    var itemList = ["Apple","Banana","Orange"]
+    var itemList = UserDefaults.standard.stringArray(forKey: "package") ?? [String]()
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
