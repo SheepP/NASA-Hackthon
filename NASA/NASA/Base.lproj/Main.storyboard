@@ -202,7 +202,7 @@
             </objects>
             <point key="canvasLocation" x="2406" y="375"/>
         </scene>
-        <!--Add Item View Controller-->
+        <!--Item-->
         <scene sceneID="DN1-F5-OOj">
             <objects>
                 <viewController id="G2y-DZ-ji1" customClass="AddItemViewController" customModule="NASA" customModuleProvider="target" sceneMemberID="viewController">
@@ -222,6 +222,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="G2y-DZ-ji1" eventType="touchDown" id="h1U-Y5-8MX"/>
                                     <action selector="textFieldDidChanged:" destination="G2y-DZ-ji1" eventType="editingChanged" id="Td7-oB-IwO"/>
                                 </connections>
                             </button>
@@ -229,6 +230,7 @@
                         <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="mIz-JG-zOh"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="gbR-4v-jvz"/>
                     <connections>
                         <outlet property="itemInputTextField" destination="VO1-0z-V65" id="4Z2-pd-Rnq"/>
                         <outlet property="okButton" destination="5Cp-Ji-LgG" id="YEr-LC-NiI"/>
@@ -236,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MyC-ji-7RH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3367" y="695"/>
+            <point key="canvasLocation" x="3178" y="1128"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="u4R-Jw-5aM">
@@ -267,6 +269,7 @@
                         <segue destination="AUB-sW-d5u" kind="relationship" relationship="viewControllers" id="VCS-yW-zTJ"/>
                         <segue destination="QZR-H1-n3N" kind="relationship" relationship="viewControllers" id="xX4-og-6ub"/>
                         <segue destination="sn1-zb-jre" kind="relationship" relationship="viewControllers" id="1GI-6C-df4"/>
+                        <segue destination="G2y-DZ-ji1" kind="relationship" relationship="viewControllers" id="pDF-aB-Vcq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4O-KX-Lzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
