@@ -25,7 +25,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="Eearthquake"/>
                                 <connections>
-                                    <segue destination="09b-7H-EsT" kind="show" id="aQA-It-YLz"/>
+                                    <segue destination="JEP-WJ-Ka4" kind="show" id="Qi1-yU-ouT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,7 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kXm-xq-RTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="204" y="375"/>
         </scene>
         <!--Earthquake-->
         <scene sceneID="IpG-mq-JSv">
@@ -51,9 +51,6 @@
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="Your Item List"/>
-                                <connections>
-                                    <segue destination="JEP-WJ-Ka4" kind="show" id="365-FI-fdo"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Earthquake" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pio-II-dIf">
                                 <rect key="frame" x="122" y="41" width="130" height="21"/>
@@ -62,13 +59,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VH7-nO-QCC">
-                                <rect key="frame" x="67" y="236" width="249" height="237"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Recent Disaster Information"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kO8-WO-RZY">
                                 <rect key="frame" x="16" y="41" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -79,6 +69,13 @@
                                     <action selector="backView1:" destination="09b-7H-EsT" eventType="touchUpInside" id="zUC-9k-qw9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VH7-nO-QCC">
+                                <rect key="frame" x="63" y="236" width="249" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Recent Disaster Information"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gXh-BW-04i"/>
@@ -86,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMy-2Y-zgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757.60000000000002" y="374.66266866566718"/>
+            <point key="canvasLocation" x="-698" y="375"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="d9F-kB-fYj">
@@ -118,7 +115,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go to Next"/>
                                 <connections>
-                                    <segue destination="AUB-sW-d5u" kind="show" id="wZt-lN-dmt"/>
+                                    <segue destination="Q4X-46-OSi" kind="show" id="wZt-lN-dmt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,9 +125,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGB-n6-fJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1485.5999999999999" y="374.66266866566718"/>
+            <point key="canvasLocation" x="983" y="375"/>
         </scene>
-        <!--Page4 View Controller-->
+        <!--Item-->
         <scene sceneID="abn-hR-3uO">
             <objects>
                 <viewController id="AUB-sW-d5u" customClass="Page4ViewController" customModule="NASA" customModuleProvider="target" sceneMemberID="viewController">
@@ -197,6 +194,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9hn-so-ztt"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="GEM-Wl-XfD"/>
                     <connections>
                         <outlet property="userImage1" destination="7Eb-IC-RT7" id="no9-lX-7Ur"/>
                         <outlet property="userImage2" destination="Gic-u8-ZSQ" id="sFn-6n-NoN"/>
@@ -205,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cp0-qg-HSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2220" y="374.66266866566718"/>
+            <point key="canvasLocation" x="2406" y="375"/>
         </scene>
         <!--Add Item View Controller-->
         <scene sceneID="DN1-F5-OOj">
@@ -240,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MyC-ji-7RH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3060" y="688.60569715142435"/>
+            <point key="canvasLocation" x="3367" y="695"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="u4R-Jw-5aM">
@@ -255,7 +253,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaC-fY-dkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3060" y="-31"/>
+            <point key="canvasLocation" x="3366" y="-4"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fKQ-hj-t34">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Q4X-46-OSi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KHt-kP-PMH">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AUB-sW-d5u" kind="relationship" relationship="viewControllers" id="VCS-yW-zTJ"/>
+                        <segue destination="QZR-H1-n3N" kind="relationship" relationship="viewControllers" id="xX4-og-6ub"/>
+                        <segue destination="sn1-zb-jre" kind="relationship" relationship="viewControllers" id="1GI-6C-df4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4O-KX-Lzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="375"/>
+        </scene>
+        <!--Guide-->
+        <scene sceneID="aDs-Kd-0uO">
+            <objects>
+                <viewController id="QZR-H1-n3N" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ayR-ZK-KC8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.41255357780000002" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="4Nd-6k-QZ5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Guide" id="1oB-rC-SP2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kqx-vQ-e6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="1128"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="Sed-oK-M8M">
+            <objects>
+                <viewController id="sn1-zb-jre" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u9r-IL-3yG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="crg-t3-aBF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" id="UoT-Yd-do8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0M5-1F-jBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2406" y="1128"/>
         </scene>
     </scenes>
     <resources>
