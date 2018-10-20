@@ -222,7 +222,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <action selector="textInputButton:" destination="G2y-DZ-ji1" eventType="touchDown" id="BzT-YF-XHf"/>
+                                    <action selector="textFieldDidChanged:" destination="G2y-DZ-ji1" eventType="editingChanged" id="Td7-oB-IwO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -231,6 +231,7 @@
                     </view>
                     <connections>
                         <outlet property="itemInputTextField" destination="VO1-0z-V65" id="4Z2-pd-Rnq"/>
+                        <outlet property="okButton" destination="5Cp-Ji-LgG" id="YEr-LC-NiI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MyC-ji-7RH" userLabel="First Responder" sceneMemberID="firstResponder"/>

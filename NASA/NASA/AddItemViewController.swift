@@ -11,10 +11,19 @@ import UIKit
 class AddItemViewController: UIViewController {
     var infofromview4:Int?
     
-    @IBAction func textInputButton(_ sender: UIButton) {
-        
-    }
+
     @IBOutlet weak var itemInputTextField: UITextField!
+    
+    @IBOutlet weak var okButton: UIButton!
+    
+    @IBAction func textFieldDidChanged(_ sender: UITextField) {
+        if sender.text != ""{
+            okButton.setTitle("OK", for: .normal)
+        }else{
+            okButton.setTitle("Back", for: .normal)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
