@@ -142,6 +142,14 @@
                                 <rect key="frame" x="0.0" y="341" width="375" height="326"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ca4-xV-g6s">
+                                    <rect key="frame" x="0.0" y="72" width="375" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="add item"/>
+                                    <connections>
+                                        <segue destination="G2y-DZ-ji1" kind="show" id="sRG-gm-j7d"/>
+                                    </connections>
+                                </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="pkv-nb-mnV">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -165,6 +173,14 @@
                                     <action selector="backToPage3:" destination="AUB-sW-d5u" eventType="touchDown" id="Sgu-BH-7Bd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fob-IY-M2L">
+                                <rect key="frame" x="251" y="54" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Family"/>
+                                <connections>
+                                    <segue destination="1v3-IH-HCW" kind="show" id="U9N-zF-u2A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9hn-so-ztt"/>
@@ -174,34 +190,55 @@
             </objects>
             <point key="canvasLocation" x="2220" y="374.66266866566718"/>
         </scene>
-        <!--User View Controller-->
-        <scene sceneID="mRE-dV-Rfl">
+        <!--Add Item View Controller-->
+        <scene sceneID="DN1-F5-OOj">
             <objects>
-                <viewController id="4OM-hH-XCk" customClass="userViewController" customModule="NASA" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mrV-yU-EAZ">
+                <viewController id="G2y-DZ-ji1" customClass="AddItemViewController" customModule="NASA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eq0-oI-jok">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rqH-O7-iot">
-                                <rect key="frame" x="139" y="318" width="97" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VO1-0z-V65">
+                                <rect key="frame" x="121" y="165" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3R-lf-SvN">
-                                <rect key="frame" x="86" y="384" width="202" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cp-Ji-LgG">
+                                <rect key="frame" x="170" y="203" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="textInputButton:" destination="G2y-DZ-ji1" eventType="touchDown" id="BzT-YF-XHf"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="955-bd-W7j"/>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="mIz-JG-zOh"/>
+                    </view>
+                    <connections>
+                        <outlet property="itemInputTextField" destination="VO1-0z-V65" id="4Z2-pd-Rnq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MyC-ji-7RH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3060" y="688.60569715142435"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="u4R-Jw-5aM">
+            <objects>
+                <viewController id="1v3-IH-HCW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ynv-Vo-xMH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="T5F-6z-aTv"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qJX-A8-pgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aaC-fY-dkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2234.4000000000001" y="374.66266866566718"/>
+            <point key="canvasLocation" x="3060" y="-31"/>
         </scene>
     </scenes>
 </document>
