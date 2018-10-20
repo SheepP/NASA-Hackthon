@@ -9,7 +9,11 @@
 import UIKit
 
 class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
+    
+    @IBOutlet weak var userImage1: UIImageView!
+    @IBOutlet weak var userImage2: UIImageView!
+    @IBOutlet weak var userImage3: UIImageView!
+    
     @IBAction func backToPage3(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
@@ -32,8 +36,12 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        userImage1.layer.cornerRadius = userImage1.frame.size.width / 2
+        userImage1.clipsToBounds = true
+        userImage2.layer.cornerRadius = userImage2.frame.size.width / 2
+        userImage2.clipsToBounds = true
+        userImage3.layer.cornerRadius = userImage3.frame.size.width / 2
+        userImage3.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {

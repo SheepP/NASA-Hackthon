@@ -181,10 +181,27 @@
                                     <segue destination="1v3-IH-HCW" kind="show" id="U9N-zF-u2A"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UserImageSample" translatesAutoresizingMaskIntoConstraints="NO" id="Gic-u8-ZSQ">
+                                <rect key="frame" x="142" y="128" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UserImageSample" translatesAutoresizingMaskIntoConstraints="NO" id="2pn-xd-FqH">
+                                <rect key="frame" x="269" y="128" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UserImageSample" translatesAutoresizingMaskIntoConstraints="NO" id="7Eb-IC-RT7">
+                                <rect key="frame" x="16" y="128" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9hn-so-ztt"/>
                     </view>
+                    <connections>
+                        <outlet property="userImage1" destination="7Eb-IC-RT7" id="no9-lX-7Ur"/>
+                        <outlet property="userImage2" destination="Gic-u8-ZSQ" id="sFn-6n-NoN"/>
+                        <outlet property="userImage3" destination="2pn-xd-FqH" id="k4h-gz-h6E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cp0-qg-HSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -241,4 +258,7 @@
             <point key="canvasLocation" x="3060" y="-31"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="UserImageSample" width="100" height="100"/>
+    </resources>
 </document>
