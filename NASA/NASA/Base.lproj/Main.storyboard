@@ -371,6 +371,18 @@ under this situation ?</string>
                                                         <action selector="cellSwitch:" destination="AUB-sW-d5u" eventType="valueChanged" id="yg1-a1-LqD"/>
                                                     </connections>
                                                 </switch>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgx-FY-krR">
+                                                    <rect key="frame" x="240" y="0.0" width="94" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" title="Recommend">
+                                                        <color key="titleColor" red="0.64100955309999996" green="0.063470304189999993" blue="0.23689831680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="itemTableButton:" destination="AUB-sW-d5u" eventType="touchDown" id="Ihr-Z6-cWL"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>

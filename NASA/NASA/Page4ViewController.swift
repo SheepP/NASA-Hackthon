@@ -10,6 +10,9 @@ import UIKit
 
 class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
+    @IBAction func itemTableButton(_ sender: UIButton) {
+            sender.isHidden = true
+    }
     @IBOutlet weak var itemTableView: UITableView!
     @IBOutlet weak var userImage1: UIImageView!
     @IBOutlet weak var userImage2: UIImageView!
@@ -32,7 +35,6 @@ class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDel
         cell.textLabel?.text = itemList[indexPath.row]
         let switches = cell.viewWithTag(200) as? UISwitch
         switches?.isOn = false
-        cell.backgroundColor = .gray
         return cell
         
     }
