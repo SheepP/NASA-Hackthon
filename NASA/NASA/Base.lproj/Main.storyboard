@@ -34,38 +34,38 @@
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                 <state key="normal" title="Earthquake"/>
                                 <connections>
-                                    <action selector="optionsPressed:" destination="z1G-ql-q4A" eventType="touchUpInside" id="UiQ-nd-rR3"/>
+                                    <segue destination="JEP-WJ-Ka4" kind="show" id="Epb-dW-qvj"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P0-jc-XuS">
-                                <rect key="frame" x="51" y="332" width="52" height="30"/>
+                                <rect key="frame" x="45" y="332" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Disaster"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghV-DT-EjM">
-                                <rect key="frame" x="51" y="362" width="52" height="30"/>
+                                <rect key="frame" x="45" y="362" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Disaster"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRm-Av-xrm">
-                                <rect key="frame" x="51" y="392" width="52" height="30"/>
+                                <rect key="frame" x="45" y="392" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Disaster"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rn-tT-5Ar">
-                                <rect key="frame" x="51" y="422" width="52" height="30"/>
+                                <rect key="frame" x="45" y="422" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Disaster"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7a-Af-EKn">
-                                <rect key="frame" x="51" y="452" width="52" height="30"/>
+                                <rect key="frame" x="45" y="452" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Disaster"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHV-u9-zod">
                                 <rect key="frame" x="42" y="268" width="67" height="30"/>
@@ -73,7 +73,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                 <state key="normal" title="Typhoon"/>
                                 <connections>
-                                    <action selector="optionsPressed:" destination="z1G-ql-q4A" eventType="touchUpInside" id="fq5-bc-bKN"/>
+                                    <segue destination="JEP-WJ-Ka4" kind="show" id="9CW-oH-09r"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIm-jC-O63">
@@ -111,10 +111,10 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfO-Sl-u7q">
-                                <rect key="frame" x="49" y="476" width="57" height="45"/>
+                                <rect key="frame" x="46" y="476" width="64" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Disaster"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -190,7 +190,7 @@
         <!--Question View Controller-->
         <scene sceneID="d9F-kB-fYj">
             <objects>
-                <viewController id="JEP-WJ-Ka4" customClass="questionViewController" customModule="NASA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="questionView" id="JEP-WJ-Ka4" customClass="questionViewController" customModule="NASA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ENY-VN-PnW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -414,4 +414,7 @@
         <image name="File" width="21" height="20"/>
         <image name="UserImageSample" width="100" height="100"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="9CW-oH-09r"/>
+    </inferredMetricsTieBreakers>
 </document>

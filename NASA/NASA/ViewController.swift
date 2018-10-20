@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet var options: [UIButton]!
     
     @IBAction func optionsPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "questionView", sender: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
