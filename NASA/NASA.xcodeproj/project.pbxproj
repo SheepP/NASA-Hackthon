@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04467E87217AEA26003DC80C /* earthquakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04467E86217AEA26003DC80C /* earthquakeViewController.swift */; };
 		04467E89217AEA50003DC80C /* questionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04467E88217AEA50003DC80C /* questionViewController.swift */; };
+		1038034A217AF6C80080D249 /* Page4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10380349217AF6C80080D249 /* Page4ViewController.swift */; };
 		10A1855C217A31AB000C94C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1855B217A31AB000C94C0 /* AppDelegate.swift */; };
 		10A1855E217A31AB000C94C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1855D217A31AB000C94C0 /* ViewController.swift */; };
 		10A18561217A31AB000C94C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A1855F217A31AB000C94C0 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		04467E86217AEA26003DC80C /* earthquakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = earthquakeViewController.swift; sourceTree = "<group>"; };
 		04467E88217AEA50003DC80C /* questionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionViewController.swift; sourceTree = "<group>"; };
+		10380349217AF6C80080D249 /* Page4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4ViewController.swift; sourceTree = "<group>"; };
 		10A18558217A31AB000C94C0 /* NASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A1855B217A31AB000C94C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A1855D217A31AB000C94C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				10A1855B217A31AB000C94C0 /* AppDelegate.swift */,
 				10A1855D217A31AB000C94C0 /* ViewController.swift */,
 				10A1855F217A31AB000C94C0 /* Main.storyboard */,
+				10380349217AF6C80080D249 /* Page4ViewController.swift */,
 				04467E88217AEA50003DC80C /* questionViewController.swift */,
 				04467E86217AEA26003DC80C /* earthquakeViewController.swift */,
 				10A18562217A31AE000C94C0 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				10A1855E217A31AB000C94C0 /* ViewController.swift in Sources */,
 				10A1855C217A31AB000C94C0 /* AppDelegate.swift in Sources */,
+				1038034A217AF6C80080D249 /* Page4ViewController.swift in Sources */,
 				04467E89217AEA50003DC80C /* questionViewController.swift in Sources */,
 				04467E87217AEA26003DC80C /* earthquakeViewController.swift in Sources */,
 			);
