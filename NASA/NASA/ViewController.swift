@@ -10,16 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView1: UIImageView!
     @IBAction func startSelect(_ sender: Any) {
         for option in options{
             option.isHidden = !option.isHidden
         }
+        if imageView1.isHidden == true{
+            imageView1.isHidden = false
+        }else{
+            imageView1.isHidden = true
+        }
+        
     }
+
     
     @IBOutlet var options: [UIButton]!
     
     @IBAction func optionsPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "questionView", sender: nil)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
