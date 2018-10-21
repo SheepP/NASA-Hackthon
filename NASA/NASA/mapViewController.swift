@@ -10,8 +10,27 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class mapViewController: UIViewController,CLLocationManagerDelegate {
+class mapViewController: UIViewController,CLLocationManagerDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
+    @IBOutlet weak var imagePicker: UIImageView!
+    
+    @IBAction func selectPicture() {
+        let imagePicker=UIImagePickerController()
+        imagePicker.delegate=self
+        imagePicker.allowsEditing=true
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
+        if let pickerImage = info[UIImagePickerControllerEditedImage]as?UIImage
+        {
+            imagePicker.image=pickerImage
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBOutlet weak var map: MKMapView!
     var locationManager: CLLocationManager?
     
@@ -37,6 +56,8 @@ class mapViewController: UIViewController,CLLocationManagerDelegate {
         userImageC.clipsToBounds = true
         userImageD.layer.cornerRadius = userImageD.frame.size.width / 2
         userImageD.clipsToBounds = true
+        imagePicker.layer.cornerRadius = imagePicker.frame.size.width / 2
+        imagePicker.clipsToBounds = true
         
         //map
         locationManager = CLLocationManager()
