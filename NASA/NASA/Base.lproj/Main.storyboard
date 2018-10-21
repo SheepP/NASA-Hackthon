@@ -122,7 +122,7 @@
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.61568627450980395" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P0-jc-XuS">
-                                <rect key="frame" x="40" y="332" width="74" height="30"/>
+                                <rect key="frame" x="41" y="325" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                 <state key="normal" title="Landslide"/>
@@ -131,7 +131,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghV-DT-EjM">
-                                <rect key="frame" x="36" y="362" width="82" height="30"/>
+                                <rect key="frame" x="37" y="354" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                 <state key="normal" title="Forest Fire"/>
@@ -140,7 +140,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRm-Av-xrm">
-                                <rect key="frame" x="46" y="392" width="63" height="30"/>
+                                <rect key="frame" x="46" y="381" width="63" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                 <state key="normal" title="Tornado"/>
@@ -149,7 +149,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rn-tT-5Ar">
-                                <rect key="frame" x="56" y="422" width="42" height="30"/>
+                                <rect key="frame" x="57" y="410" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                 <state key="normal" title="Flood"/>
@@ -157,17 +157,8 @@
                                     <segue destination="JEP-WJ-Ka4" kind="show" id="vSB-rD-4cb"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7a-Af-EKn">
-                                <rect key="frame" x="46" y="452" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Blizzard"/>
-                                <connections>
-                                    <segue destination="JEP-WJ-Ka4" kind="show" id="iO4-rB-05D"/>
-                                </connections>
-                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHV-u9-zod">
-                                <rect key="frame" x="42" y="268" width="67" height="30"/>
+                                <rect key="frame" x="45" y="264" width="67" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                 <state key="normal" title="Typhoon"/>
@@ -181,22 +172,33 @@
                                 <state key="normal" backgroundImage="UserImageSample"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inh-J6-pne">
-                                <rect key="frame" x="54" y="164" width="43" height="30"/>
+                                <rect key="frame" x="52" y="163" width="48" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <state key="normal" title="David">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oL-FI-nog">
+                                <rect key="frame" x="34" y="293" width="88" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="David"/>
+                                <state key="normal" title="Earthquake"/>
+                                <connections>
+                                    <segue destination="JEP-WJ-Ka4" kind="show" id="nwe-cS-EKy"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpA-84-3Ly">
-                                <rect key="frame" x="19" y="190" width="116" height="30"/>
+                                <rect key="frame" x="28" y="190" width="96" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="12"/>
                                 <state key="normal" title="Edit Infomation"/>
                                 <connections>
                                     <segue destination="S8D-fH-ZJD" kind="show" id="H3e-sz-VIT"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nB-xr-8oZ">
-                                <rect key="frame" x="25" y="227" width="116" height="37"/>
+                                <rect key="frame" x="20" y="231" width="116" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <state key="normal" title="All Disasters">
@@ -213,7 +215,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfO-Sl-u7q">
-                                <rect key="frame" x="46" y="476" width="64" height="45"/>
+                                <rect key="frame" x="46" y="462" width="64" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                 <state key="normal" title="Fire"/>
@@ -228,13 +230,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oL-FI-nog">
-                                <rect key="frame" x="33" y="302" width="88" height="30"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7a-Af-EKn">
+                                <rect key="frame" x="47" y="442" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Earthquake"/>
+                                <state key="normal" title="Blizzard"/>
                                 <connections>
-                                    <segue destination="JEP-WJ-Ka4" kind="show" id="nwe-cS-EKy"/>
+                                    <segue destination="JEP-WJ-Ka4" kind="show" id="iO4-rB-05D"/>
                                 </connections>
                             </button>
                         </subviews>
