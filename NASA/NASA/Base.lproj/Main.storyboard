@@ -534,7 +534,7 @@ under this situation ?</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.91372549020000005" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="mIz-JG-zOh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add+" image="04 adding item" id="gbR-4v-jvz"/>
