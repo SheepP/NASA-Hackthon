@@ -18,120 +18,126 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGo-sb-gSi">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGo-sb-gSi">
                                 <rect key="frame" x="139" y="73" width="97" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Typhoon"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="QAM-w3-dKz"/>
+                                    <constraint firstAttribute="width" constant="97" id="dHC-5l-9KG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="iHa-8f-Gco"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="97" id="s4d-rg-xI2"/>
+                                </constraints>
+                                <state key="normal" title="Typhoon" image="01"/>
                                 <connections>
                                     <segue destination="JEP-WJ-Ka4" kind="show" id="Qi1-yU-ouT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3P-Eb-ndK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3P-Eb-ndK">
                                 <rect key="frame" x="244" y="73" width="97" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Fire"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="SYC-BX-k4r"/>
+                                    <constraint firstAttribute="height" constant="97" id="z0I-Kz-JBW"/>
+                                </constraints>
+                                <state key="normal" title="Fire" image="02-1"/>
                                 <connections>
                                     <segue destination="JEP-WJ-Ka4" kind="show" id="ZVt-Td-orO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GX-Ko-4CE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GX-Ko-4CE">
                                 <rect key="frame" x="139" y="190" width="97" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Eearthquake"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="BUT-EE-KFx"/>
+                                    <constraint firstAttribute="height" constant="97" id="eNK-F8-nhh"/>
+                                </constraints>
+                                <state key="normal" title="Eearthquake" image="05"/>
                                 <connections>
                                     <segue destination="JEP-WJ-Ka4" kind="show" id="Ka2-r1-djm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBD-sj-O76">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBD-sj-O76">
                                 <rect key="frame" x="244" y="190" width="97" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="landslide "/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="JeT-4z-Nls"/>
+                                    <constraint firstAttribute="height" constant="97" id="zSg-AP-xoK"/>
+                                </constraints>
+                                <state key="normal" title="landslide " image="03-1"/>
                                 <connections>
                                     <segue destination="JEP-WJ-Ka4" kind="show" id="tSu-QB-HMc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76T-30-M7m">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76T-30-M7m">
                                 <rect key="frame" x="139" y="302" width="97" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title=" Forest Fire"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="W9s-Et-BYx"/>
+                                    <constraint firstAttribute="width" constant="97" id="ycN-na-nlG"/>
+                                </constraints>
+                                <state key="normal" title=" Forest Fire" image="04"/>
                                 <connections>
                                     <segue destination="JEP-WJ-Ka4" kind="show" id="0yg-Js-PPv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXz-nC-O6T">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXz-nC-O6T">
                                 <rect key="frame" x="244" y="302" width="97" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Tornado"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="I75-we-idI"/>
+                                    <constraint firstAttribute="width" constant="97" id="T06-U6-1fO"/>
+                                </constraints>
+                                <state key="normal" title="Tornado" image="06"/>
                                 <connections>
                                     <segue destination="JEP-WJ-Ka4" kind="show" id="bmC-Ss-lJN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKq-xS-TUV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKq-xS-TUV">
                                 <rect key="frame" x="139" y="419" width="97" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Flood"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Cz7-iw-hB1"/>
+                                    <constraint firstAttribute="height" constant="97" id="lNb-8s-5Ke"/>
+                                </constraints>
+                                <state key="normal" title="Flood" image="08"/>
                                 <connections>
                                     <segue destination="JEP-WJ-Ka4" kind="show" id="bYI-33-Ibi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pri-4d-9zf">
-                                <rect key="frame" x="241" y="418" width="100" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Blizzard"/>
-                                <connections>
-                                    <segue destination="JEP-WJ-Ka4" kind="show" id="UaD-z9-51I"/>
-                                </connections>
-                            </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="imageView1" translatesAutoresizingMaskIntoConstraints="NO" id="odW-eF-ykl">
-                                <rect key="frame" x="0.0" y="0.0" width="149" height="532"/>
+                                <rect key="frame" x="0.0" y="0.0" width="156" height="532"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.61568627450980395" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P0-jc-XuS">
-                                <rect key="frame" x="45" y="332" width="64" height="30"/>
+                                <rect key="frame" x="40" y="332" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Disaster"/>
+                                <state key="normal" title="Landslide"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghV-DT-EjM">
-                                <rect key="frame" x="45" y="362" width="64" height="30"/>
+                                <rect key="frame" x="36" y="362" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Disaster"/>
+                                <state key="normal" title="Forest Fire"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRm-Av-xrm">
-                                <rect key="frame" x="45" y="392" width="64" height="30"/>
+                                <rect key="frame" x="46" y="392" width="63" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Disaster"/>
+                                <state key="normal" title="Tornado"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rn-tT-5Ar">
-                                <rect key="frame" x="45" y="422" width="64" height="30"/>
+                                <rect key="frame" x="56" y="422" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Disaster"/>
+                                <state key="normal" title="Flood"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7a-Af-EKn">
-                                <rect key="frame" x="45" y="452" width="64" height="30"/>
+                                <rect key="frame" x="46" y="452" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Disaster"/>
+                                <state key="normal" title="Blizzard"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHV-u9-zod">
                                 <rect key="frame" x="42" y="268" width="67" height="30"/>
@@ -192,7 +198,7 @@
                                 <rect key="frame" x="46" y="476" width="64" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="Disaster"/>
+                                <state key="normal" title="Fire"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DISASTERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2F-eu-RKW">
                                 <rect key="frame" x="142" y="38" width="90" height="21"/>
@@ -201,8 +207,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pri-4d-9zf">
+                                <rect key="frame" x="244" y="419" width="100" height="97"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Sxa-Jy-H3o"/>
+                                    <constraint firstAttribute="height" constant="97" id="zVt-8e-nmZ"/>
+                                </constraints>
+                                <state key="normal" title="Blizzard" image="07"/>
+                                <connections>
+                                    <segue destination="JEP-WJ-Ka4" kind="show" id="UaD-z9-51I"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.91372549020000005" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rKq-xS-TUV" firstAttribute="leading" secondItem="qPa-3x-m5E" secondAttribute="leading" constant="139" id="FmN-s1-KTC"/>
+                            <constraint firstItem="qPa-3x-m5E" firstAttribute="bottom" secondItem="OBD-sj-O76" secondAttribute="bottom" constant="380" id="IdL-r0-Ww1"/>
+                            <constraint firstItem="qPa-3x-m5E" firstAttribute="bottom" secondItem="a3P-Eb-ndK" secondAttribute="bottom" constant="497" id="Ioz-bO-FC6"/>
+                            <constraint firstItem="qPa-3x-m5E" firstAttribute="bottom" secondItem="Pri-4d-9zf" secondAttribute="bottom" constant="151" id="Ir4-xM-Yfu"/>
+                            <constraint firstItem="qPa-3x-m5E" firstAttribute="bottom" secondItem="rKq-xS-TUV" secondAttribute="bottom" constant="151" id="Lup-IQ-nGw"/>
+                            <constraint firstItem="OBD-sj-O76" firstAttribute="leading" secondItem="qPa-3x-m5E" secondAttribute="leading" constant="244" id="OAV-0g-Je6"/>
+                            <constraint firstItem="a3P-Eb-ndK" firstAttribute="leading" secondItem="AGo-sb-gSi" secondAttribute="trailing" constant="8" id="Rb8-jV-aeA"/>
+                            <constraint firstItem="qPa-3x-m5E" firstAttribute="bottom" secondItem="3GX-Ko-4CE" secondAttribute="bottom" constant="380" id="WVm-gy-RIu"/>
+                            <constraint firstItem="TXz-nC-O6T" firstAttribute="leading" secondItem="qPa-3x-m5E" secondAttribute="leading" constant="244" id="bMr-ah-8VK"/>
+                            <constraint firstItem="3GX-Ko-4CE" firstAttribute="leading" secondItem="qPa-3x-m5E" secondAttribute="leading" constant="139" id="cX8-WQ-T6q"/>
+                            <constraint firstItem="qPa-3x-m5E" firstAttribute="bottom" secondItem="76T-30-M7m" secondAttribute="bottom" constant="268" id="fMh-8k-krs"/>
+                            <constraint firstItem="qPa-3x-m5E" firstAttribute="bottom" secondItem="TXz-nC-O6T" secondAttribute="bottom" constant="268" id="isf-zN-TN1"/>
+                            <constraint firstItem="AGo-sb-gSi" firstAttribute="leading" secondItem="qPa-3x-m5E" secondAttribute="leading" constant="139" id="no1-sd-y9Q"/>
+                            <constraint firstItem="76T-30-M7m" firstAttribute="leading" secondItem="qPa-3x-m5E" secondAttribute="leading" constant="139" id="w5z-OF-0aK"/>
+                            <constraint firstItem="qPa-3x-m5E" firstAttribute="bottom" secondItem="AGo-sb-gSi" secondAttribute="bottom" constant="497" id="xgm-FR-PZY"/>
+                            <constraint firstItem="Pri-4d-9zf" firstAttribute="leading" secondItem="qPa-3x-m5E" secondAttribute="leading" constant="244" id="zlj-Tl-DBx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qPa-3x-m5E"/>
                     </view>
                     <connections>
@@ -834,13 +870,20 @@ under this situation ?</string>
     </scenes>
     <resources>
         <image name="+" width="591" height="591"/>
+        <image name="01" width="160" height="160"/>
         <image name="01-1" width="591" height="591"/>
         <image name="02" width="300" height="180"/>
+        <image name="02-1" width="160" height="160"/>
         <image name="02-2" width="591" height="591"/>
         <image name="03" width="300" height="180"/>
+        <image name="03-1" width="160" height="160"/>
         <image name="03-2" width="591" height="591"/>
+        <image name="04" width="160" height="160"/>
         <image name="04-1" width="591" height="591"/>
         <image name="05" width="300" height="180"/>
+        <image name="06" width="160" height="160"/>
+        <image name="07" width="160" height="160"/>
+        <image name="08" width="160" height="160"/>
         <image name="File" width="21" height="20"/>
         <image name="UserImageSample" width="100" height="100"/>
     </resources>
