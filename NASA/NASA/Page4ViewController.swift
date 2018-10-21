@@ -11,7 +11,7 @@ import UIKit
 class Page4ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     @IBAction func itemTableButton(_ sender: UIButton) {
-            sender.isHidden = true
+        sender.isHidden = true
     }
     @IBOutlet weak var itemTableView: UITableView!
     @IBOutlet weak var userImage1: UIImageView!
