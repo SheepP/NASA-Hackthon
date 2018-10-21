@@ -495,7 +495,7 @@ under this situation ?</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9hn-so-ztt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="GEM-Wl-XfD"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="01 item list" id="GEM-Wl-XfD"/>
                     <connections>
                         <outlet property="itemTableView" destination="Kpm-sr-m6A" id="09C-vt-POw"/>
                         <outlet property="userImage1" destination="7Eb-IC-RT7" id="no9-lX-7Ur"/>
@@ -537,7 +537,7 @@ under this situation ?</string>
                         <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="mIz-JG-zOh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add+" id="gbR-4v-jvz"/>
+                    <tabBarItem key="tabBarItem" title="Add+" image="04 adding item" id="gbR-4v-jvz"/>
                     <connections>
                         <outlet property="itemInputTextField" destination="VO1-0z-V65" id="4Z2-pd-Rnq"/>
                         <outlet property="okButton" destination="5Cp-Ji-LgG" id="YEr-LC-NiI"/>
@@ -865,7 +865,7 @@ under this situation ?</string>
                         <color key="backgroundColor" white="0.41255357780000002" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="4Nd-6k-QZ5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Guide" id="1oB-rC-SP2"/>
+                    <tabBarItem key="tabBarItem" title="Guide" image="02 guide" id="1oB-rC-SP2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kqx-vQ-e6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -881,7 +881,7 @@ under this situation ?</string>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="crg-t3-aBF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chat" id="UoT-Yd-do8"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="03 chatting room" id="UoT-Yd-do8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0M5-1F-jBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -891,14 +891,18 @@ under this situation ?</string>
     <resources>
         <image name="+" width="591" height="591"/>
         <image name="01" width="160" height="160"/>
+        <image name="01 item list" width="85" height="85"/>
         <image name="01-1" width="591" height="591"/>
         <image name="02" width="300" height="180"/>
+        <image name="02 guide" width="85" height="85"/>
         <image name="02-1" width="160" height="160"/>
         <image name="02-2" width="591" height="591"/>
         <image name="03" width="300" height="180"/>
+        <image name="03 chatting room" width="85" height="85"/>
         <image name="03-1" width="160" height="160"/>
         <image name="03-2" width="591" height="591"/>
         <image name="04" width="160" height="160"/>
+        <image name="04 adding item" width="85" height="85"/>
         <image name="04-1" width="591" height="591"/>
         <image name="05" width="300" height="180"/>
         <image name="06" width="160" height="160"/>
